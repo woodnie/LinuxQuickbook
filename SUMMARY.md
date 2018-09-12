@@ -1,7 +1,7 @@
 # Summary
 
-* [Linux](README.md)
-* [Linux](linux.md)
+* [Introduction](README.md)
+* [Red Hat Enterprise Linux](linux.md)
 * [Red Hat Enterprise Linux 5](red_hat_enterprise_linux_5\README.md)
   * [Command](red_hat_enterprise_linux_5\command.md)
   * [Deployment Services](red_hat_enterprise_linux_5\deployment_services\README.md)
@@ -13,7 +13,7 @@
       * [tomcat](red_hat_enterprise_linux_5\deployment_services\deployment_web_services\tomcat.md)
     * [Deployment mail services](red_hat_enterprise_linux_5\deployment_services\deployment_mail_services\README.3.md)
       * [dovecot](red_hat_enterprise_linux_5\deployment_services\deployment_mail_services\dovecot.md)
-      * [procmail(MDA)](red_hat_enterprise_linux_5\deployment_services\deployment_mail_services\procmailmda.md)
+      * [procmail\(MDA\)](red_hat_enterprise_linux_5\deployment_services\deployment_mail_services\procmailmda.md)
       * [sendmail](red_hat_enterprise_linux_5\deployment_services\deployment_mail_services\sendmail.md)
       * [postfix](red_hat_enterprise_linux_5\deployment_services\deployment_mail_services\postfix.md)
     * [Deployment ftp services](red_hat_enterprise_linux_5\deployment_services\deployment_ftp_services\README.4.md)
@@ -49,7 +49,7 @@
     * [rlogin](red_hat_enterprise_linux_5\deployment_services\rlogin.md)
     * [kickstart](red_hat_enterprise_linux_5\deployment_services\kickstart.md)
   * [Enviroment Variable](red_hat_enterprise_linux_5\enviroment_variable\README.3.md)
-    * [LD_LIBRARY_PATH](red_hat_enterprise_linux_5\enviroment_variable\ldlibrary_path.md)
+    * [LD\_LIBRARY\_PATH](red_hat_enterprise_linux_5\enviroment_variable\ldlibrary_path.md)
   * [Operation](red_hat_enterprise_linux_5\operation\README.4.md)
     * [install](red_hat_enterprise_linux_5\operation\install.md)
     * [start process](red_hat_enterprise_linux_5\operation\start_process.md)
@@ -126,7 +126,7 @@
       * [/etc/gshadow](red_hat_enterprise_linux_5\operation\files_detailed\etcgshadow.md)
       * [/etc/skel](red_hat_enterprise_linux_5\operation\files_detailed\etcskel.md)
       * [/etc/login.defs](red_hat_enterprise_linux_5\operation\files_detailed\etclogindefs.md)
-      * [/etc/DIR_COLORS](red_hat_enterprise_linux_5\operation\files_detailed\etcdircolors.md)
+      * [/etc/DIR\_COLORS](red_hat_enterprise_linux_5\operation\files_detailed\etcdircolors.md)
       * [bashrc](red_hat_enterprise_linux_5\operation\files_detailed\bashrc.md)
       * [profile](red_hat_enterprise_linux_5\operation\files_detailed\profile.md)
       * [/etc/syslog.conf](red_hat_enterprise_linux_5\operation\files_detailed\etcsyslogconf.md)
@@ -403,3 +403,4 @@
     * [encryption principle](migrating_a_sles-11-sp3-for-vmware_system_to_sles-\common\encryption_principle.md)
   * [关于Linux系统中的密码加密流程及原理 ](migrating_a_sles-11-sp3-for-vmware_system_to_sles-\guan_yu_linux_xi_tong_zhong_de_mi_ma_jia_mi_liu_ch.md)
   * [进程打开文件](migrating_a_sles-11-sp3-for-vmware_system_to_sles-\jin_cheng_da_kai_wen_jian.md)
+
