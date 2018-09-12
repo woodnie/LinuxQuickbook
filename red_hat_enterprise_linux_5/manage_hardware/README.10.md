@@ -1,0 +1,1 @@
+## manage hardware {#manage-hardware}

@@ -1,0 +1,1 @@
+# Red Hat Enterprise Linux 6 {#red-hat-enterprise-linux-6}
