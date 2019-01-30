@@ -403,4 +403,6 @@
     * [encryption principle](migrating_a_sles-11-sp3-for-vmware_system_to_sles-\common\encryption_principle.md)
   * [关于Linux系统中的密码加密流程及原理 ](migrating_a_sles-11-sp3-for-vmware_system_to_sles-\guan_yu_linux_xi_tong_zhong_de_mi_ma_jia_mi_liu_ch.md)
   * [进程打开文件](migrating_a_sles-11-sp3-for-vmware_system_to_sles-\jin_cheng_da_kai_wen_jian.md)
+* [SysVinit vs Systemd](sysvinit-vs-systemd.md)
+  * systemctl vs chkconfig
 
