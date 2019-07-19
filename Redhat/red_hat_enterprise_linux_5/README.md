@@ -1,1 +1,0 @@
-# Red Hat Enterprise Linux 5 {#red-hat-enterprise-linux-5}
