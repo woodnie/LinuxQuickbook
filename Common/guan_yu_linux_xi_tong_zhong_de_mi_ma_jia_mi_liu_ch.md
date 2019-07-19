@@ -1,6 +1,6 @@
 ## 关于Linux系统中的密码加密流程及原理 {#linux}
 
-                        PAM是个什么东西，词典上没有。放狗查了下，这是个简写，全称是：Pluggable Authentication Modules，中文叫“可插入认证模块”。它是一种统一的认证方案。PAM 让您能随时改变您的认证方法以及需求，并且不需要重新编译任何代码就封装了所有本地认证方法。具体见 [PAM 网站](http://www.kernel.org/pub/linux/libs/pam/index.html)。
+PAM是个什么东西，词典上没有。放狗查了下，这是个简写，全称是：Pluggable Authentication Modules，中文叫“可插入认证模块”。它是一种统一的认证方案。PAM 让您能随时改变您的认证方法以及需求，并且不需要重新编译任何代码就封装了所有本地认证方法。具体见 [PAM 网站](http://www.kernel.org/pub/linux/libs/pam/index.html)。
 
 对于 PAM 您只需要做：
 
