@@ -23,23 +23,13 @@ In this case,you need to scan host0 & host1 HBA.
 3.If the system virtual memory is too low ,then do not proceed further.If you have enough free virtual memory,then you can proceed with below command to scan new LUNS.
 
 ```
-# echo "1" 
->
- /sys/class/fc_host/host0/issue_lip
-# echo "- - -" 
->
- /sys/class/scsi_host/host0/scan
-# echo "1" 
->
- /sys/class/fc_host/host1/issue_lip
-# echo "- - -" 
->
- /sys/class/scsi_host/host1/scan
+# echo "1" > /sys/class/fc_host/host0/issue_lip
+# echo "- - -" > /sys/class/scsi_host/host0/scan
+# echo "1" > /sys/class/fc_host/host1/issue_lip
+# echo "- - -" > /sys/class/scsi_host/host1/scan
 ```
 
-```
 
-```
 
 **Note:**You need to monitor the “issue\_lip” in /var/log/messages to determine when the scan will complete.This operation is an asynchronous operation.
 
@@ -56,10 +46,7 @@ You can also use rescan-scsi-bus.sh script to detect new LUNS.
 4. Verify if the new LUN is visible or not by counting the available disks.
 
 ```
-# fdisk -l 2
->
-/dev
-ull | egrep '^Disk' | egrep -v 'dm-' | wc -l
+# fdisk -l 2 >/dev/null | egrep '^Disk' | egrep -v 'dm-' | wc -l
 ```
 
 If any new LUNS added , then you can see more count is more then before scanning the LUNS.  
@@ -73,8 +60,6 @@ If any new LUNS added , then you can see more count is more then before scanning
 ```
 [root@mylinz1 ~]# fdisk -l |egrep '^Disk' |egrep -v 'dm-'
 Disk /dev/sda: 21.5 GB, 21474836480 bytes
-
-
 ```
 
 2.Find out how many SCSI controller configured.
@@ -90,17 +75,9 @@ In this case, you need to scan host0,host1 & host2.
 3. Scan the SCSI disks using below command.
 
 ```
-[root@mylinz1 ~]# echo "- - -" 
->
- /sys/class/scsi_host/host0/scan
-[root@mylinz1 ~]# echo "- - -" 
->
- /sys/class/scsi_host/host1/scan
-[root@mylinz1 ~]# echo "- - -" 
->
- /sys/class/scsi_host/host2/scan
-
-
+[root@mylinz1 ~]# echo "- - -" > /sys/class/scsi_host/host0/scan
+[root@mylinz1 ~]# echo "- - -" > /sys/class/scsi_host/host1/scan
+[root@mylinz1 ~]# echo "- - -" > /sys/class/scsi_host/host2/scan
 ```
 
 4. Verify if the new disks are visible or not.
