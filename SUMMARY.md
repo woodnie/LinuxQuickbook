@@ -406,4 +406,5 @@
 * [Ubuntu](ubuntu.md)
   * [apt](ubuntu/apt.md)
     * [apt list](ubuntu/apt/apt-list.md)
+* [scan new disk](scan-new-disk.md)
 
