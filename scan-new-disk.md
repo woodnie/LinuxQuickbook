@@ -83,3 +83,27 @@ From Redhat Linux 5.4 onwards, Red hat introduced “/usr/bin/rescan-scsi-bus.sh
 
 But most of the time, the script will not be able to scan new disks and you need to go with echo command.
 
+### 3\) If you’ve increased the disk size {#3-if-you-ve-increased-the-disk-size}
+
+Once you’ve changed the disk’s size in VMware, boot up your VM again if you had to shut it down to increase the disk size in vSphere. If you’ve rebooted the server, you won’t have to rescan your SCSI devices as that happens on boot. If you did not reboot your server, rescan your SCSI devices as such.
+
+First, check the name\(s\) of your scsi devices.
+
+```
+$ 
+ls /sys/class/scsi_device/
+
+0:0:0:0 1:0:0:0  2:0:0:0
+```
+
+Then rescan the scsi bus. Below you can replace the ‘0:0:0:0’ with the actual scsi bus name found with the previous command. Each colon is prefixed with a slash, which is what makes it look weird.
+
+```
+~$ 
+echo 1 
+>
+ /sys/class/scsi_device/0\:0\:0\:0/device/rescan
+```
+
+That will rescan the current scsi bus and the disk size that has changed will show up.
+
