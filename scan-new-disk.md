@@ -107,3 +107,9 @@ echo 1
 
 That will rescan the current scsi bus and the disk size that has changed will show up.
 
+
+
+[https://www.suse.com/support/kb/doc/?id=000018798](https://www.suse.com/support/kb/doc/?id=000018798)
+
+btrfs:~ \# echo 1 &gt; /sys/block/sda/device/rescan
+
