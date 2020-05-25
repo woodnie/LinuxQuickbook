@@ -11,8 +11,8 @@ export http\_proxy=[http://149.223.27.27:80export](http://149.223.27.27:80export
 
 
 
+#disable proxy temperay
+$  unset http\_proxy
 
-\#  unset http\_proxy
-
-\#  unset https\_proxy
+$  unset https\_proxy
 
